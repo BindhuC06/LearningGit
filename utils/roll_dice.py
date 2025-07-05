@@ -1,4 +1,5 @@
 # TODO - Bindu
-
+import random
 def roll_dice():
-    pass
+    ans=random.randint(1,6)
+    return ans
