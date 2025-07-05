@@ -1,6 +1,6 @@
 import streamlit as st
 import logging
-
+from datetime import datetime
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -17,4 +17,4 @@ else:
     logger.warning("No name entered by the user.")
 
 if move_ahead:
-    pass
+    st.write(datetime.now())
